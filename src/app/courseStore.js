@@ -17,6 +17,7 @@ const courseStore = (set) => ({
     toggleCourseStatus: (courseId) => {
         set((state) => ({
             courses: state.courses.map((course) => course.id === courseId ? {...course, completed : !course.completed} : course )
+            
         }))
     }
 })
@@ -24,7 +25,7 @@ const courseStore = (set) => ({
 const useCourseStore = create(
     devtools(
         persist(courseStore, {
-            name: 'courses',
+            name: "courses",
         })
     )
 )
