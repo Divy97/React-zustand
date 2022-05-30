@@ -1,5 +1,6 @@
 import './App.css';
 import CourseFrom from './components/CourseForm'
+import CourseList from './components/CourseList';
 function App() {
   return (
     <div className="main-container">
@@ -9,6 +10,7 @@ function App() {
         marginBottom: "2rem"
       }}> My Course List </h1>
       <CourseFrom/>
+      <CourseList />
     </div>
   );
 }
