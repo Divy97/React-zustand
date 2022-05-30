@@ -19,7 +19,7 @@ const CourseList = () => {
                         <li
                         className={`course-item`}
                         style={{
-                            backgroundColor: course.completed ? "#00FF0044" : "white"
+                            backgroundColor: course.completed ? "#00FF0044" : "black"
                         }}
                         >
                             <span className='course-item-col-1'>
